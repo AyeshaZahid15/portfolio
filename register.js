@@ -1,7 +1,7 @@
 // Import Firebase SDKs
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
-
+ 
 // Your Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyAmhMYeEboUTY3_bK7BuOTzoxuDdptsoGw",
@@ -79,7 +79,7 @@ form.addEventListener("submit", (e) => {
       alert("✅ Account created successfully! Please log in.");
       document.body.classList.remove("fade-in");
       setTimeout(() => {
-        window.location.href = "login.html"; 
+        window.location.href = "index.html"; 
       }, 400);
     })
     .catch((error) => {

@@ -1,7 +1,7 @@
 // Import Firebase SDKs
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
 import { getAuth, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
-
+ 
 // Your Firebase config
 const firebaseConfig = {
   apiKey: "AIzaSyAmhMYeEboUTY3_bK7BuOTzoxuDdptsoGw",
@@ -35,7 +35,7 @@ form.addEventListener("submit", (e) => {
   
       // Optional: redirect back to login
       setTimeout(() => {
-        window.location.href = "login.html";
+        window.location.href = "index.html";
       }, 1000);
     })
     .catch((error) => {

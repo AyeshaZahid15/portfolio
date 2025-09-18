@@ -12,7 +12,7 @@ const firebaseConfig = {
   appId: "1:262394985302:web:8b57adbf20688fb82b34f7",
   measurementId: "G-E2P3JBGFZG"
 };
-
+ 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -45,7 +45,7 @@ onAuthStateChanged(auth, (user) => {
       e.preventDefault();
       signOut(auth).then(() => {
         alert("Logged out successfully!");
-        window.location.href = "login.html";
+        window.location.href = "index.html";
       }).catch((error) => {
         console.error("Logout Error:", error);
       });
@@ -60,6 +60,6 @@ onAuthStateChanged(auth, (user) => {
 
   } else {
     console.log("❌ No user logged in, redirecting...");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
 });
